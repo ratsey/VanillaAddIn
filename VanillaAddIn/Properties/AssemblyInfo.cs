@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Add-in for OneNote")]
 [assembly: AssemblyDescription("An Add-in for OneNote")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("VanillaAddIn")]
-[assembly: AssemblyCopyright("Copyright © 2015 Corporation")]
+[assembly: AssemblyCompany("Jens Ratsey-Woodroffe")]
+[assembly: AssemblyProduct("MLOAddIn")]
+[assembly: AssemblyCopyright("Copyright © 2018 Jens Ratsey-Woodroffe")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 [assembly: CLSCompliant(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("45FCCCEB-10CB-4C29-B8D2-1C8033139534")]
+[assembly: Guid("1C39988A-90C4-40A3-A04C-EE2C5CAD4EC1")]
 
 // Version information for an assembly consists of the following four values:
 //

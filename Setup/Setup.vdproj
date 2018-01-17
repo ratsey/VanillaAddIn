@@ -3018,11 +3018,11 @@
         }
         "Product"
         {
-        "Name" = "8:VanillaAddIn"
-        "ProductName" = "8:VanillaAddIn"
-        "ProductCode" = "8:{94B72EF8-A523-4ECB-8AC8-82ED8A18362B}"
-        "PackageCode" = "8:{33D92157-E411-467F-AB78-74AC707A878B}"
-        "UpgradeCode" = "8:{0025873C-20C5-48D6-A93A-FBD3891A9233}"
+        "Name" = "8:MLOAddIn"
+        "ProductName" = "8:MLOAddIn"
+        "ProductCode" = "8:{F92AD90C-A5FB-4C9C-B52E-63D09FB1B5A8}"
+        "PackageCode" = "8:{2CAC63D9-417F-4BA5-8155-E7541A93EAE4}"
+        "UpgradeCode" = "8:{58E7584C-6DE5-4BA3-828B-E600F2B11C88}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
@@ -3100,7 +3100,7 @@
                                                         {
                                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4CBE6A756F7B498480396E23C0912D91"
                                                             {
-                                                            "Name" = "8:MyApplication.VanillaAddIn.dll"
+                                                            "Name" = "8:OneNote.MLOAddIn.dll"
                                                             "Condition" = "8:"
                                                             "AlwaysCreate" = "11:FALSE"
                                                             "DeleteAtUninstall" = "11:TRUE"
@@ -3116,7 +3116,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:[TARGETDIR]MyApplication.VanillaAddIn.dll"
+                                                                    "Value" = "8:[TARGETDIR]OneNote.MLOAddIn.dll"
                                                                     }
                                                                 }
                                                             }
@@ -3164,7 +3164,7 @@
                                                         {
                                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_F7AC1B508D9C4A8D812B74D423321C9B"
                                                             {
-                                                            "Name" = "8:MyApplication.VanillaAddIn"
+                                                            "Name" = "8:OneNote.MLOAddIn"
                                                             "Condition" = "8:"
                                                             "AlwaysCreate" = "11:FALSE"
                                                             "DeleteAtUninstall" = "11:TRUE"
@@ -3196,7 +3196,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:VanillaAddIn"
+                                                                    "Value" = "8:MLOAddIn"
                                                                     }
                                                                 }
                                                             }
@@ -3240,7 +3240,7 @@
                                         {
                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_88A39E02EF2D463CB938160AC101CB31"
                                             {
-                                            "Name" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                            "Name" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                             "Condition" = "8:"
                                             "AlwaysCreate" = "11:FALSE"
                                             "DeleteAtUninstall" = "11:TRUE"
@@ -3256,7 +3256,7 @@
                                                     "Condition" = "8:"
                                                     "Transitive" = "11:FALSE"
                                                     "ValueTypes" = "3:1"
-                                                    "Value" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                                    "Value" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                                     }
                                                 }
                                             }
@@ -3276,7 +3276,7 @@
                                         {
                                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8F6F08870AB84046A3518DDF84C3466A"
                                             {
-                                            "Name" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                            "Name" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                             "Condition" = "8:"
                                             "AlwaysCreate" = "11:FALSE"
                                             "DeleteAtUninstall" = "11:TRUE"
@@ -3334,7 +3334,7 @@
                         {
                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_80EFEB6F8B61425B8FBD17728928F551"
                             {
-                            "Name" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                            "Name" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                             "Condition" = "8:"
                             "AlwaysCreate" = "11:FALSE"
                             "DeleteAtUninstall" = "11:TRUE"
@@ -3370,7 +3370,7 @@
                         {
                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FEA1447FA6204611896D7C380A1DBAF8"
                             {
-                            "Name" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                            "Name" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                             "Condition" = "8:"
                             "AlwaysCreate" = "11:FALSE"
                             "DeleteAtUninstall" = "11:TRUE"
@@ -3395,7 +3395,7 @@
                                             "Condition" = "8:"
                                             "Transitive" = "11:FALSE"
                                             "ValueTypes" = "3:1"
-                                            "Value" = "8:MyApplication.VanillaAddIn"
+                                            "Value" = "8:OneNote.MLOAddIn"
                                             }
                                         }
                                     }
@@ -3447,7 +3447,7 @@
                                             "Condition" = "8:"
                                             "Transitive" = "11:FALSE"
                                             "ValueTypes" = "3:1"
-                                            "Value" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                            "Value" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                             }
                                         }
                                     }
@@ -3469,7 +3469,7 @@
                                             "Condition" = "8:"
                                             "Transitive" = "11:FALSE"
                                             "ValueTypes" = "3:1"
-                                            "Value" = "8:MyApplication.VanillaAddIn.1"
+                                            "Value" = "8:OneNote.MLOAddIn.1"
                                             }
                                         }
                                     }
@@ -3504,7 +3504,7 @@
                                     "Condition" = "8:"
                                     "Transitive" = "11:FALSE"
                                     "ValueTypes" = "3:1"
-                                    "Value" = "8:VanillaAddIn Class"
+                                    "Value" = "8:MLOAddIn Class"
                                     }
                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_75BFBC491AF3480F8F7187FB6D48D560"
                                     {
@@ -3512,7 +3512,7 @@
                                     "Condition" = "8:"
                                     "Transitive" = "11:FALSE"
                                     "ValueTypes" = "3:1"
-                                    "Value" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                    "Value" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                     }
                                 }
                             }
@@ -3523,7 +3523,7 @@
                     }
                     "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_716C060777B448F9AD2A0270AD2CB963"
                     {
-                    "Name" = "8:MyApplication.VanillaAddIn"
+                    "Name" = "8:OneNote.MLOAddIn"
                     "Condition" = "8:"
                     "AlwaysCreate" = "11:FALSE"
                     "DeleteAtUninstall" = "11:TRUE"
@@ -3548,7 +3548,7 @@
                                     "Condition" = "8:"
                                     "Transitive" = "11:FALSE"
                                     "ValueTypes" = "3:1"
-                                    "Value" = "8:MyApplication.VanillaAddIn.1"
+                                    "Value" = "8:OneNote.MLOAddIn.1"
                                     }
                                 }
                             }
@@ -3570,7 +3570,7 @@
                                     "Condition" = "8:"
                                     "Transitive" = "11:FALSE"
                                     "ValueTypes" = "3:1"
-                                    "Value" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                    "Value" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                     }
                                 }
                             }
@@ -3589,7 +3589,7 @@
                     }
                     "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C57D5C2276C14FFFB597211BAA1352D4"
                     {
-                    "Name" = "8:MyApplication.VanillaAddIn.1"
+                    "Name" = "8:OneNote.MLOAddIn.1"
                     "Condition" = "8:"
                     "AlwaysCreate" = "11:FALSE"
                     "DeleteAtUninstall" = "11:TRUE"
@@ -3614,7 +3614,7 @@
                                     "Condition" = "8:"
                                     "Transitive" = "11:FALSE"
                                     "ValueTypes" = "3:1"
-                                    "Value" = "8:{D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB}"
+                                    "Value" = "8:{1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6}"
                                     }
                                 }
                             }

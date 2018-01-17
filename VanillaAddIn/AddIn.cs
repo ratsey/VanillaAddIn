@@ -15,15 +15,15 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using Extensibility;
 using Microsoft.Office.Core;
-using MyApplication.VanillaAddIn.Utilities;
+using MyApplication.MLOAddIn.Utilities;
 using Application = Microsoft.Office.Interop.OneNote.Application;  // Conflicts with System.Windows.Forms
 
 #pragma warning disable CS3003 // Type is not CLS-compliant
 
-namespace MyApplication.VanillaAddIn
+namespace MyApplication.MLOAddIn
 {
 	[ComVisible(true)]
-	[Guid("D5ECCD00-CF2D-409B-B65A-BDBACB9F21DB"), ProgId("MyApplication.VanillaAddIn")]
+	[Guid("1B1A0A1B-2FF8-4364-ABBF-6870EB7C13D6"), ProgId("OneNote.MLOAddIn")]
 
 	public class AddIn : IDTExtensibility2, IRibbonExtensibility
 	{
@@ -99,9 +99,9 @@ namespace MyApplication.VanillaAddIn
 		{
 		}
 
-		public async Task VanillaAddInButtonClicked(IRibbonControl control)
+		public async Task MLOAddInButtonClicked(IRibbonControl control)
 		{
-			MessageBox.Show("VanillaAddIn button pushed! Now we'll load up the full XML hierarchy as well as the current page XML. This may take some time.");
+			MessageBox.Show("MLOAddIn button pushed! Now we'll load up the full XML hierarchy as well as the current page XML. This may take some time.");
 			ShowForm();
 			return;
 		}
