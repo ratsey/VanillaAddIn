@@ -38,6 +38,9 @@
             this.chkDebug = new System.Windows.Forms.CheckBox();
             this.txtLogFile = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnFindMLO = new System.Windows.Forms.Button();
+            this.btnFindMLOData = new System.Windows.Forms.Button();
+            this.btnFindLog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMLOExe
@@ -58,7 +61,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(320, 278);
+            this.btnOK.Location = new System.Drawing.Point(353, 278);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;
@@ -124,11 +127,44 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Log File";
             // 
+            // btnFindMLO
+            // 
+            this.btnFindMLO.Location = new System.Drawing.Point(401, 51);
+            this.btnFindMLO.Name = "btnFindMLO";
+            this.btnFindMLO.Size = new System.Drawing.Size(27, 23);
+            this.btnFindMLO.TabIndex = 17;
+            this.btnFindMLO.Text = "...";
+            this.btnFindMLO.UseVisualStyleBackColor = true;
+            this.btnFindMLO.Click += new System.EventHandler(this.btnFindMLO_Click);
+            // 
+            // btnFindMLOData
+            // 
+            this.btnFindMLOData.Location = new System.Drawing.Point(401, 87);
+            this.btnFindMLOData.Name = "btnFindMLOData";
+            this.btnFindMLOData.Size = new System.Drawing.Size(27, 23);
+            this.btnFindMLOData.TabIndex = 18;
+            this.btnFindMLOData.Text = "...";
+            this.btnFindMLOData.UseVisualStyleBackColor = true;
+            this.btnFindMLOData.Click += new System.EventHandler(this.btnMLODataFile_Click);
+            // 
+            // btnFindLog
+            // 
+            this.btnFindLog.Location = new System.Drawing.Point(401, 217);
+            this.btnFindLog.Name = "btnFindLog";
+            this.btnFindLog.Size = new System.Drawing.Size(27, 23);
+            this.btnFindLog.TabIndex = 19;
+            this.btnFindLog.Text = "...";
+            this.btnFindLog.UseVisualStyleBackColor = true;
+            this.btnFindLog.Click += new System.EventHandler(this.btnLogFile_Click);
+            // 
             // frmSetup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 313);
+            this.ClientSize = new System.Drawing.Size(440, 313);
+            this.Controls.Add(this.btnFindLog);
+            this.Controls.Add(this.btnFindMLOData);
+            this.Controls.Add(this.btnFindMLO);
             this.Controls.Add(this.txtLogFile);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chkDebug);
@@ -160,5 +196,8 @@
         private System.Windows.Forms.CheckBox chkDebug;
         private System.Windows.Forms.TextBox txtLogFile;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnFindMLO;
+        private System.Windows.Forms.Button btnFindMLOData;
+        private System.Windows.Forms.Button btnFindLog;
     }
 }
