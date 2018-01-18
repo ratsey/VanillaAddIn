@@ -6,6 +6,10 @@ using Utils.Dlg;
 
 namespace JTools
 {
+    // Uses Thread Apartment Safe Open/Save File Dialogs for C#
+    // https://www.codeproject.com/Articles/841702/Thread-Apartment-Safe-Open-Save-File-Dialogs-for-C
+    // Christian Kleinheinz, 24 Nov 2014 
+
     public partial class frmSetup : Form
     {
         public frmSetup()
