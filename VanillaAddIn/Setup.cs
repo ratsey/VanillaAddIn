@@ -1,6 +1,8 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
+using Utils.Dlg;
 
 namespace JTools
 {
@@ -13,27 +15,35 @@ namespace JTools
             ReadSettings();
         }
 
-        //private void btnFindMLO_Click(object sender, EventArgs e)
-        //{
-        //    openFile.DefaultExt = "EXE";
-        //    openFile.Filter = "Executables (*.exe)|*.exe";
+        private void btnFindMLO_Click(object sender, EventArgs e)
+        {
+            CFileOpenDlgThreadApartmentSafe dlg = new CFileOpenDlgThreadApartmentSafe();
+            dlg.DefaultExt = "EXE";
+            dlg.Filter = "Executables (*.exe)|*.exe";
 
-        //    if (openFile.ShowDialog() == DialogResult.OK)
-        //    {
-        //        txtMLOExe.Text = openFile.FileName;
-        //    }
-        //}
+            Point ptStartLocation = new Point(this.Location.X, this.Location.Y);
 
-        //private void btnMLODataFile_Click(object sender, EventArgs e)
-        //{
-        //    openFile.DefaultExt = "ML";
-        //    openFile.Filter = "MyLifeOrganized Data File (*.ml)|*.ML";
+            dlg.StartupLocation = ptStartLocation;
+            DialogResult res = dlg.ShowDialog();
 
-        //    if (openFile.ShowDialog() == DialogResult.OK)
-        //    {
-        //        txtMLODataFile.Text = openFile.FileName;
-        //    }
-        //}
+            if (res == DialogResult.OK)
+            {
+                txtMLOExe.Text = dlg.FilePath;
+            }
+        }
+
+        private void btnMLODataFile_Click(object sender, EventArgs e)
+        {
+            CFileOpenDlgThreadApartmentSafe dlg = new CFileOpenDlgThreadApartmentSafe();
+            dlg.DefaultExt = "ML";
+            dlg.Filter = "MyLifeOrganized Data File (*.ml)|*.ML";
+            dlg.StartupLocation = new Point(this.Location.X, this.Location.Y);
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                txtMLODataFile.Text = dlg.FilePath;
+            }
+        }
 
         private void ReadSettings()
         {
@@ -69,15 +79,17 @@ namespace JTools
             this.Close();
         }
 
-        //private void btnLogFile_Click(object sender, EventArgs e)
-        //{
-        //    openFile.DefaultExt = "TXT";
-        //    openFile.Filter = "JTools Log File (*.txt)|*.txt";
+        private void btnLogFile_Click(object sender, EventArgs e)
+        {
+            CFileOpenDlgThreadApartmentSafe dlg = new CFileOpenDlgThreadApartmentSafe();
+            dlg.DefaultExt = "TXT";
+            dlg.Filter = "JTools Log File (*.txt)|*.txt";
+            dlg.StartupLocation = new Point(this.Location.X, this.Location.Y);
 
-        //    if (openFile.ShowDialog() == DialogResult.OK)
-        //    {
-        //        txtLogFile.Text = openFile.FileName;
-        //    }
-        //}
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                txtLogFile.Text = dlg.FilePath;
+            }
+        }
     }
 }

@@ -67,6 +67,9 @@
     <Reference Include="extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="FileDialogsThreadAppartmentSafe">
+      <HintPath>..\..\FileDialogsThreadAppartmentSafe\FileDialogsThreadAppartmentSafe\bin\Release\FileDialogsThreadAppartmentSafe.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
