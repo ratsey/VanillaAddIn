@@ -19,7 +19,7 @@ namespace MyApplication.VanillaAddIn.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,7 +61,7 @@ namespace MyApplication.VanillaAddIn.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VanillaAddIn.
+        ///   Looks up a localized string similar to OneNoteMLO.
         /// </summary>
         internal static string AddInTitle {
             get {
@@ -72,19 +72,48 @@ namespace MyApplication.VanillaAddIn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo {
+        internal static System.Drawing.Bitmap MLO {
             get {
-                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                object obj = ResourceManager.GetObject("MLO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReTitle {
+            get {
+                object obj = ResourceManager.GetObject("ReTitle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2006/01/customui&quot; loadImage=&quot;GetImage&quot;&gt;
+        ///  &lt;ribbon&gt;
+        ///    &lt;tabs&gt;
+        ///
+        ///      &lt;!--&lt;tab id=&quot;tabCustom&quot; label=&quot;MLO&quot;&gt;--&gt;
+        ///      &lt;tab idMso=&quot;TabHome&quot;&gt;
+        ///        &lt;group id=&quot;groupSetup&quot; label=&quot;JTools&quot;&gt;
+        ///          &lt;button id=&quot;buttonHello&quot; label=&quot;Export to MLO&quot; size=&quot;normal&quot; screentip=&quot;Create entries in MyLifeOrganized for tagged ToDo items&quot; onAction=&quot;CreateMLOTasks&quot; image=&quot;MLO.png&quot;/&gt;
+        ///          &lt;button id=&quot;buttonRenamePage&quot; lab [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ribbon {
             get {
                 return ResourceManager.GetString("ribbon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setup_icon {
+            get {
+                object obj = ResourceManager.GetObject("setup_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
