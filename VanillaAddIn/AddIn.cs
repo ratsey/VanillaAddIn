@@ -356,12 +356,11 @@ namespace JTools.MLO
             return pageId;
         }
 
+        // Generate a new page containing an outline of tasks obtained from MLO's 'Copy Tasks' function
         private void CreateOutlineWork()
         {
             try
             {
-                //if (Clipboard.ContainsText(TextDataFormat.UnicodeText)) {
-
                 XNamespace ns = oneNoteProvider.GetNamespace();
                 var currentPage = oneNoteProvider.CurrentlyViewedPage;
                 var pageContent = oneNoteProvider.GetPageContent(currentPage.ID);
@@ -377,7 +376,6 @@ namespace JTools.MLO
 
                 while (line.Length > 0 && i < lines.Length)
                 {
-
                     line = lines[i];
 
                     root.Descendants(ns + "OEChildren").First().Add(new XElement(ns + "OE"));
@@ -386,7 +384,6 @@ namespace JTools.MLO
                     // Tag
                     if (line.StartsWith(" "))
                     {
-                        //oe.Add(new XAttribute("quickStyleIndex", "2"));
                         oe.Add(new XElement(ns + "Tag"));
                         var item = oe.Descendants(ns + "Tag").Last();
                         item.Add(new XAttribute("index", "0"));
